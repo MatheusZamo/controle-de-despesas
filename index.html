@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Controle de despesas</title>
+  </head>
+  <body>
+    <h2>Controle de despesas</h2>
+
+    <div class="container">
+      <div id="valores">
+        <h4>Saldo atual</h4>
+
+        <h1 id="balance" class="balance">R$ 0.00</h1>
+
+        <div class="inc-exp-container">
+          <div>
+            <h4>Receitas</h4>
+            <p id="money-plus" class="money plus">+ R$0.00</p>
+          </div>
+
+          <div>
+            <h4>Despesas</h4>
+            <p id="money-minus" class="money minus">- R$0.00</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="transacoes">
+        <h3>Transações</h3>
+        <ul id="transactions" class="transactions">
+          <!-- <li class="minus">
+          Salário <span>-$400</span><button class="delete-btn">x</button>
+        </li> -->
+        </ul>
+      </div>
+
+      <div id="adicionaValor">
+        <h3>Adicionar transação</h3>
+
+        <form id="form">
+          <div class="form-control">
+            <label for="text">Nome</label>
+            <input
+              autofocus
+              type="text"
+              autocomplete="off"
+              id="text"
+              placeholder="Nome da transação"
+            />
+          </div>
+
+          <div class="form-control">
+            <label for="amount"
+              >Valor <br />
+              <small>(Para valores negativos insira - no inicio)</small>
+            </label>
+            <input
+              type="number"
+              autocomplete="off"
+              step="00.001"
+              id="amount"
+              placeholder="Valor da transação"
+            />
+          </div>
+
+          <button class="btn">Adicionar</button>
+        </form>
+        <span id="span"></span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
