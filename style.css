@@ -178,14 +178,14 @@ input[type='number'] {
  scroll-behavior: auto;
 }
 ::-webkit-scrollbar-track {
-  background-color: #fff;
+  background-color: #f7f7f7;
 }
 ::-webkit-scrollbar {
   width: 6px;
-  background: #DADBBD;
+  background: #fff;
 }
 ::-webkit-scrollbar-thumb {
-  background: #DADBBD;
+  background: #fff;
 }
 
 @media (max-width:600px){
